@@ -21,6 +21,9 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
      attribution: '&copy; <a href="https://carto.com/attribution">CARTO</a>'
  }).addTo(hmap);
 
+var osmGeocoder = new L.Control.OSMGeocoder();
+
+hmap.addControl(osmGeocoder);
 
 header
 .append('tr')
